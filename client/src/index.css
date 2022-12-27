@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    z-index: 1;
+  }
+  .shadow-main {
+    -webkit-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.1);
+  }
+  .shadow-medium {
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  a.active {
+    @apply border-wa-primary dark:bg-wa-dark-3;
+  }
+  a.active svg {
+    @apply stroke-wa-primary;
+  }
+  .wa-scroll-area {
+    @apply overflow-y-scroll;
+    scrollbar-width: thin;
+  }
+
+  /* Default scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    @apply dark:bg-gray-800 bg-gray-200;
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    @apply dark:bg-gray-600 bg-gray-400;
+  }
+
+  /* Custom scrollbar */
+  .wa-scroll-area::-webkit-scrollbar {
+    width: 5px;
+    background: transparent;
+  }
+
+  .wa-scroll-area:hover::-webkit-scrollbar {
+    width: 5px;
+    @apply dark:bg-gray-700 bg-gray-200;
+  }
+  .wa-scroll-area:hover::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    @apply dark:bg-gray-600 bg-gray-400;
+  }
+
+  .wa-scroll-area::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 10px;
+  }
+
+  /* Custom CSS for Theme switch  */
+  input:checked + .slider:before {
+    -webkit-transform: translateX(27px);
+    -ms-transform: translateX(27px);
+    transform: translateX(27px);
+  }
+
+  html.light .react-input-emoji--container {
+    margin-left: 0 !important;
+  }
+
+  html.dark .react-input-emoji--container {
+    border-color: rgb(46 54 80) !important;
+    background-color: #1a2036 !important;
+    margin-left: 0 !important;
+    @apply text-wa-dark-gray;
+  }
+}
