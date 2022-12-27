@@ -1,9 +1,9 @@
 import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { ChatUserCard } from '../'
 import { fetchAllChat } from '../../api/ChatRequest'
 import { useAuth } from '../../hooks/useAuth'
 import { setAllChats } from '../../redux/features/chatSlice'
+import ChatUserCard from './ChatUserCard'
 const Conversations = () => {
   const { Chats } = useSelector((state) => state.chat)
   const auth = useAuth()
@@ -17,7 +17,6 @@ const Conversations = () => {
       if(data) {
         dispatch(setAllChats(data))
       }
-      console.log(data)
     } catch (error) {
       console.log(error)
     }
@@ -37,8 +36,8 @@ const Conversations = () => {
           No chats found
         </p>
       )}
-      {Chats?.map((chat) => (
-        <ChatUserCard key={chat._id} chat={chat} />
+      {Chats?.map((chat, index) => (
+        <ChatUserCard key={index} chat={chat} />
       ))}
     </div>
   )

@@ -10,9 +10,7 @@ const ChatUserCard = ({ chat }) => {
   const auth = useAuth()
   const id = chat.members.filter((id) => id !== auth._id)[0]
 
-  const { isLoading, isError, error, data: user } = useGetUserByIdQuery(id)
-  // const { data } = useGetMessagesQuery(id)
-  // console.log(data)
+  const { isLoading, isError, data: user } = useGetUserByIdQuery(id)
 
   const { onlineUsers } = useSelector((state) => state.app)
   const { activeChatUser } = useSelector((state) => state.chat)
