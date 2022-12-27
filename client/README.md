@@ -2,7 +2,7 @@
 <img src="./src/assets/full-logo.png" alt="Logo" width="180">
 </p>
 
-<h3 align="center">:fa-heart: Lets Talk Real-time Chat Application :fa-heart:</h3>
+<h3 align="center">❤️ Lets Talk Real-time Chat Application ❤️</h3>
 <p align="center">
 [![facebook][facebook-shield]][facebook-url] [![Instagram][instagram-shield]][instagram-url] [![LinkedIn][linkedin-shield]][linkedin-url]
 </p>

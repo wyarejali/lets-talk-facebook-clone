@@ -2,7 +2,7 @@
 <img src="https://wyarejali.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ffavicon.748daa43.png&w=384&q=75" alt="Logo" width="80" height="80">
 </p>
 
-<h3 align="center">:fa-heart: Lets Talk REST API :fa-heart:</h3>
+<h3 align="center">❤️ Lets Talk REST API ❤️</h3>
 <p align="center">
 
 [![facebook][facebook-shield]][facebook-url] [![Instagram][instagram-shield]][instagram-url] [![LinkedIn][linkedin-shield]][linkedin-url]
