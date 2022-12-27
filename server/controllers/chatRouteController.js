@@ -39,12 +39,8 @@ export const userChats = async (req, res) => {
     const chats = await ChatSchema.find({
       members: id,
     })
-    let allIds = []
-    const allChats = chats.map((chat) => {
-      const ids = chat.members.filter((member) => member !== id)
-      return ids
-    })
-    res.status(200).json(allChats)
+    
+    res.status(200).json(chats)
   } catch (error) {
     res.status(500).json(error)
   }
