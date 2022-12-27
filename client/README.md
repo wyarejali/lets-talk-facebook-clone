@@ -4,7 +4,9 @@
 
 <h3 align="center">❤️ Lets Talk Real-time Chat Application ❤️</h3>
 <p align="center">
+
 [![facebook][facebook-shield]][facebook-url] [![Instagram][instagram-shield]][instagram-url] [![LinkedIn][linkedin-shield]][linkedin-url]
+
 </p>
 
 ![Main Image](https://wyarejali.vercel.app/_next/static/media/chat-application.944479c6.jpg)
