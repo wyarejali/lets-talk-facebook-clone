@@ -1,13 +1,13 @@
 import { IconDots } from '@tabler/icons'
-import { ActiveUser } from './'
 import { useSelector } from 'react-redux'
 import { useAuth } from '../hooks/useAuth'
+import { ActiveUser } from './'
 
 const OnlineUsers = () => {
   const { onlineUsers } = useSelector((state) => state.app)
   const auth = useAuth()
   return (
-    <div className='dark:bg-wa-dark-1 bg-wa-light flex-[.8] py-2 px-3 dark:text-wa-light-gray text-wa-dark-2 rounded-md'>
+    <div className='hidden md:block flex-1 dark:bg-wa-dark-1 bg-wa-light py-2 px-3 dark:text-wa-light-gray text-wa-dark-2 rounded-md'>
       <div className='flex justify-between items-center mb-4 border-b dark:border-wa-dark-3 pb-2'>
         <h4 className='font-semibold'>Contacts</h4>
         <button className='dark:text-wa-light text-wa-dark-1'>
